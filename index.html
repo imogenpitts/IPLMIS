@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Code base</title>
+		<meta name=viewport content="initial-scale=1.0, width=device-width" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightcase.css">
+	</head>
+	<body>
+
+
+
+
+	<div class="topbar">
+			<a href="#" class="menu-logo button">
+			<img src="img/menu/toggle.svg" height=80px width=80px>
+				</a>
+			<div class="navigation menu-container">
+				<ul class="menu-logo2">
+					<lil>
+					<a href="#"> ACERCA DE</a>
+					</lil>
+					<lil>
+					<a href="#"> CONTACTO</a>
+					</lil>
+					<lil>
+					<a href="#"> DEVOLUCIONES</a>
+					</lil>
+					</ul>
+					</div>
+
+				
+					
+
+
+		
+					<div class="logo"> <img src="img/logo/logo-XL.svg" >  </div>
+					<div class="logo1"> <img src="img/logo/logo-small.svg" width=85px  height=85px> </div>     
+					<div class="cart">  <img src="img/cart/cart-big.png" width=100px  height=100px> </div>
+					<div class="cart1"> <img src="img/cart/cart-small.png" width=60px  height=60px> </div>
+			
+					<div class="heading">
+					<a href="#">TODO</a>
+					<a href="#">HOMBRES</a>
+					<a href="#">MUJERES</a>
+					<a href="#">NIÑOS</a>
+					</div>
+			
+
+
+	</div>	
+	<div class="main">
+		<div class="main1">
+		<a href="img/products-big/cincinnati-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/cincinnati.png" width=350 height=350> <div class="box">$24</div> <div class="box1">CINCINNATI</div> </div></a>
+      <a href="img/products-big/cincinnati-cifr-XL.jpg" data-rel="lightcase:myCollection:slideshow"> <div class="pic"><img src="img/products-small/cincinnati-cifr.png" width=350 height=350> <div class="box">$24</div> <div class="box1">CINCINNATI EN CIFRAS</div> </div></a> 
+	  <a href="img/products-big/cincinnati-sleeves-XL.jpg"data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/cincinnati-sleeves.png" width=350 height=350> <div class="box">$34</div> <div class="box1">CINCINNATI- MANGAS</div> </div> </a>
+		</div>
+
+		<div class="main2">
+				<a href="img/products-big/cincinnati-body-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/cincinnati-body.png" width=350 height=350> <div class="box">$20</div> <div class="box1">CINCINNATI -BODY</div> </div></a>
+				<a href="img/products-big/cincinnati-metro-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/cincinnati-metro.png" width=350 height=350> <div class="box">$24</div> <div class="box1">CINCINNATI METRO</div> </div></a>
+				<a href="img/products-big/beautiful-day-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/beautiful-day.png" width=350 height=350> <div class="box">$26</div> <div class="box1">BEAUTIFUL DAY</div> </div></a>
+		</div>
+
+		<div class="main3">
+				<a href="img/products-big/marco-farm-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/marco-farm.png" width=350 height=350> <div class="box">$65</div> <div class="box1">MACRO FRAM</div> </div></a>
+				<a href="img/products-big/make-friends-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/make-friends.png" width=350 height=350> <div class="box">$24</div> <div class="box1">MAKE FRIENDS- NINO</div> </div></a>
+				<a href="img/products-big/hecho-ohio-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/hecho-ohio.png" width=350 height=350> <div class="box">$28</div> <div class="box1">HECHO EN OHIO</div> </div></a>
+		</div>
+
+		<div class="main4">
+				<a href="img/products-big/ohio-kid-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/ohio-kid.png" width=350 height=350> <div class="box">$24</div> <div class="box1">HECHO EN OHIO-NINO</div> </div></a>
+				<a href="img/products-big/ohio-body-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/ohio-body.png" width=350 height=350> <div class="box">$20</div> <div class="box1">HECHO EN OHIO-BODY</div> </div></a>
+				<a href="img/products-big/special-XL.jpg" data-rel="lightcase:myCollection:slideshow"><div class="pic"><img src="img/products-small/special.png" width=350 height=350> <div class="box">$15</div> <div class="box1">SPECIAL</div> </div></a>
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+    <img src="img/logo/logo-small.svg"width=80 height=80>
+    <div class="footer-text">
+		@ 2015 Wally Tees
+	</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lightcase.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('a[data-rel^=lightcase]').lightcase();
+		});
+
+
+		//Function declaration
+		function toggleMenu(event){
+			event.preventDefault();
+		$(".menu-container").slideToggle();
+		}
+
+		//Function gets linked to an event
+		$(".button").on("click", toggleMenu);
+	</script>
+
+
+
+
+
+	</body>
+</html>
